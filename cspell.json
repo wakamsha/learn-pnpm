@@ -1,0 +1,9 @@
+{
+  "ignorePaths": [
+    "**/node_modules/**",
+    "./packages/icon/dist/*",
+    "./packages/catalog/src/constants/StorySpec.ts",
+    "./packages/catalog/src/constants/Stories.ts"
+  ],
+  "words": ["Meiryo", "Consolas", "Menlo", "cvalue", "wakamsha", "constate", "zipcode", "Noto", "palt"]
+}

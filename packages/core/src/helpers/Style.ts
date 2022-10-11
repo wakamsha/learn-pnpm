@@ -1,5 +1,5 @@
-import { css, injectGlobal } from '@emotion/css';
 import { color } from 'csx';
+import { css, injectGlobal } from '@emotion/css';
 import { Color, FontFamily, Shadow } from '../constants/Style';
 import NotoSansMedium from './fonts/noto-sans/NotoSansJP-Medium.woff';
 import NotoSansRegular from './fonts/noto-sans/NotoSansJP-Regular.woff';
