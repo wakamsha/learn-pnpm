@@ -1,0 +1,15 @@
+{
+  "name": "@learn-pnpm/statement",
+  "version": "1.0.0",
+  "license": "UNLICENSED",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "develop": "node ./bin/vite.mjs",
+    "type-check": "tsc --noEmit",
+    "start": "run-p \"type-check --watch\" \"develop\"",
+    "build": "yarn type-check && node ./bin/vite -m build"
+  },
+  "dependencies": {
+    "@learn-react/core": "1.0.0"
+  }
+}

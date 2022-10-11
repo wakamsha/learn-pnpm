@@ -1,0 +1,11 @@
+{
+  "name": "@learn-pnpm/core",
+  "version": "1.0.0",
+  "license": "UNLICENSED",
+  "scripts": {
+    "test": "echo \"hello core world!!!!!!!!\""
+  },
+  "dependencies": {
+    "@learn-pnpm/core": "workspace:1.0.0"
+  }
+}

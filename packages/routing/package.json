@@ -1,0 +1,15 @@
+{
+  "name": "@learn-pnpm/routing",
+  "version": "1.0.0",
+  "license": "UNLICENSED",
+  "scripts": {
+    "test": "echo \"hello routing world!\"",
+    "develop": "node ./bin/vite.mjs",
+    "type-check": "tsc --noEmit",
+    "start": "run-p \"type-check --watch\" \"develop\"",
+    "build": "yarn type-check && node ./bin/vite.mjs -m build"
+  },
+  "dependencies": {
+    "@learn-react/core": "1.0.0"
+  }
+}

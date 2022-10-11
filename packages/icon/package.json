@@ -1,0 +1,11 @@
+{
+  "name": "@learn-pnpm/icon",
+  "version": "1.0.0",
+  "license": "UNLICENSED",
+  "scripts": {
+    "reset": "rm -rf dist/; mkdir -p dist/",
+    "generate": "node ./bin/build.mjs",
+    "format": "prettier -c -w ./dist/*; eslint -c ../../.eslintrc.js ./dist/* --fix",
+    "build": "pnpm reset; pnpm generate"
+  }
+}

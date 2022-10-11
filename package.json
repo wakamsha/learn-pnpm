@@ -1,0 +1,43 @@
+{
+  "name": "learn-pnpm",
+  "version": "1.0.0",
+  "engines": {
+    "pnpm": "7.13.2",
+    "npm": "please_use_pnpm_instead"
+  },
+  "packageManager": "pnpm@7.13.2",
+  "private": true,
+  "license": "UNLICENSED",
+  "scripts": {
+    "core": "      pnpm -F \"@learn-pnpm/core\"",
+    "icon": "      pnpm -F \"@learn-pnpm/icon\"",
+    "routing": "   pnpm -C packages/routing",
+    "statement": "pnpm -F \"@learn-pnpm/statement\"",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@types/react": "18.0.21",
+    "@types/react-dom": "18.0.6",
+    "@vitejs/plugin-react": "2.1.0",
+    "cheerio": "1.0.0-rc.12",
+    "glob": "8.0.3",
+    "husky": "8.0.1",
+    "lint-staged": "13.0.3",
+    "npm-run-all": "4.1.5",
+    "svgo": "2.8.0",
+    "ts-xor": "1.0.8",
+    "typescript": "4.8.4",
+    "vite": "3.1.7",
+    "yargs": "17.6.0"
+  },
+  "dependencies": {
+    "@emotion/css": "11.10.0",
+    "constate": "3.3.2",
+    "csx": "10.0.2",
+    "mobx": "6.6.2",
+    "mobx-react": "7.5.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-router-dom": "6.4.2"
+  }
+}

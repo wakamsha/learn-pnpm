@@ -1,0 +1,10 @@
+{
+  "extends": "../../tsconfig",
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@learn-react/icon": ["../icon/dist/index"]
+    }
+  },
+  "include": ["./src/**/*"]
+}
