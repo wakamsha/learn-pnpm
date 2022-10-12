@@ -4,8 +4,5 @@
   "license": "UNLICENSED",
   "scripts": {
     "test": "jest"
-  },
-  "dependencies": {
-    "@learn-pnpm/core": "workspace:1.0.0"
   }
 }
