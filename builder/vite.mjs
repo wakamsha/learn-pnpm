@@ -64,9 +64,9 @@ function createBaseConfig(basePath) {
     ],
     resolve: {
       alias: {
-        '@learn-react/core': resolve(basePath, '../../core/src'),
-        '@learn-react/icon': resolve(basePath, '../../icon/dist'),
-        '@learn-react/try': resolve(basePath, '../../try/src'),
+        '@learn-pnpm/core': resolve(basePath, '../../core/src'),
+        '@learn-pnpm/icon': resolve(basePath, '../../icon/dist'),
+        '@learn-pnpm/try': resolve(basePath, '../../try/src'),
       },
     },
   };

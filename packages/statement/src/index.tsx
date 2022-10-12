@@ -1,6 +1,6 @@
 import { css } from '@emotion/css';
-import { StorageProxy } from '@learn-react/core/helpers/Storage';
-import { applyGlobalStyle, applyResetStyle, gutter } from '@learn-react/core/helpers/Style';
+import { StorageProxy } from '@learn-pnpm/core/helpers/Storage';
+import { applyGlobalStyle, applyResetStyle, gutter } from '@learn-pnpm/core/helpers/Style';
 import type { ChangeEvent } from 'react';
 import { StrictMode, useEffect, useRef, useState } from 'react';
 import { createRoot } from 'react-dom/client';

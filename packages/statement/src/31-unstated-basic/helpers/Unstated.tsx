@@ -1,4 +1,4 @@
-import { useContext } from '@learn-react/core/hooks/useContext';
+import { useContext } from '@learn-pnpm/core/hooks/useContext';
 import type { ComponentType, ReactNode } from 'react';
 import { createContext } from 'react';
 

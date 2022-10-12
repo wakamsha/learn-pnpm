@@ -9,14 +9,14 @@
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
-    "core": "      pnpm -F \"@learn-pnpm/core\"",
-    "icon": "      pnpm -F \"@learn-pnpm/icon\"",
-    "routing": "   pnpm -C packages/routing",
+    "core": "     pnpm -F \"@learn-pnpm/core\"",
+    "icon": "     pnpm -F \"@learn-pnpm/icon\"",
+    "routing": "  pnpm -C packages/routing",
     "statement": "pnpm -F \"@learn-pnpm/statement\"",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "lint": "prettier -c packages/**/*.{ts,tsx}; eslint -c .eslintrc.js packages/**/*.{ts,tsx}"
   },
   "devDependencies": {
-    "@stylelint/postcss-css-in-js": "0.38.0",
     "@types/jest": "29.1.2",
     "@types/react": "18.0.21",
     "@types/react-dom": "18.0.6",

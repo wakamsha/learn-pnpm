@@ -1,5 +1,5 @@
 import { css } from '@emotion/css';
-import { gutter } from '@learn-react/core/helpers/Style';
+import { gutter } from '@learn-pnpm/core/helpers/Style';
 import { useParams } from 'react-router-dom';
 import { getFriendById } from '.';
 

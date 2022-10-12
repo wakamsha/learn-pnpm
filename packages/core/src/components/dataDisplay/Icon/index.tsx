@@ -1,5 +1,5 @@
-import type { IconName } from '@learn-react/icon';
-import { iconElements } from '@learn-react/icon';
+import type { IconName } from '@learn-pnpm/icon';
+import { iconElements } from '@learn-pnpm/icon';
 
 type Props = {
   name: IconName;
