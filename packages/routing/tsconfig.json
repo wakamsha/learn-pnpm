@@ -3,7 +3,7 @@
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
-      "@learn-react/core/*": ["../core/src/*"],
+      "@learn-pnpm/core/*": ["../core/src/*"]
     }
   },
   "include": ["./src/**/*.ts", "./src/**/*.tsx", "../core/src/*.d.ts"]

@@ -1,5 +1,5 @@
 import { createRoot } from 'react-dom/client';
-import { applyGlobalStyle, applyResetStyle } from '@learn-react/core/helpers/Style';
+import { applyGlobalStyle, applyResetStyle } from '@learn-pnpm/core/helpers/Style';
 import { NestRoutesDeep } from './App';
 
 applyResetStyle();

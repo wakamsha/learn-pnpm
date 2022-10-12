@@ -1,5 +1,5 @@
 import { css, cx } from '@emotion/css';
-import type { IconName } from '@learn-react/icon';
+import type { IconName } from '@learn-pnpm/icon';
 import type { MouseEvent } from 'react';
 import { useMemo } from 'react';
 import { BorderRadius, Duration } from '../../../constants/Style';

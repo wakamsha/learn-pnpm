@@ -1,5 +1,5 @@
 import { css } from '@emotion/css';
-import { gutter } from '@learn-react/core/helpers/Style';
+import { gutter } from '@learn-pnpm/core/helpers/Style';
 import { toJS } from 'mobx';
 import { observer } from 'mobx-react';
 import type { ChangeEvent } from 'react';

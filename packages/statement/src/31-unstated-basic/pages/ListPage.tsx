@@ -1,5 +1,5 @@
 import { css } from '@emotion/css';
-import { gutter } from '@learn-react/core/helpers/Style';
+import { gutter } from '@learn-pnpm/core/helpers/Style';
 import type { ChangeEvent } from 'react';
 import { useState } from 'react';
 import { ListContainer } from '../containers/ListContainer';
