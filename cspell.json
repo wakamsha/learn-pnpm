@@ -5,5 +5,5 @@
     "./packages/catalog/src/constants/StorySpec.ts",
     "./packages/catalog/src/constants/Stories.ts"
   ],
-  "words": ["Meiryo", "Consolas", "Menlo", "cvalue", "wakamsha", "constate", "zipcode", "Noto", "palt"]
+  "words": ["cimg", "Meiryo", "Consolas", "Menlo", "cvalue", "pnpm", "wakamsha", "constate", "zipcode", "Noto", "palt"]
 }
