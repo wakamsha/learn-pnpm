@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "license": "UNLICENSED",
   "scripts": {
-    "test": "echo \"hello core world!!!!!!!!\""
+    "test": "jest"
   },
   "dependencies": {
     "@learn-pnpm/core": "workspace:1.0.0"
