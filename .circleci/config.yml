@@ -21,6 +21,7 @@ commands:
       - run:
           name: Install pnpm package manager
           command: |
+            curl -fsSL https://get.pnpm.io/install.sh | SHELL=`which bash` bash -
             curl -L https://pnpm.js.org/pnpm.js | node - add --global pnpm@7.13.2
       - run:
           name: Execute pnpm install
