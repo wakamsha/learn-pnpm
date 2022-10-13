@@ -20,7 +20,7 @@ commands:
     steps:
       - run:
           name: Install pnpm package manager
-          command: corepack enable && corepack prepare pnpm@7.13.2 --activate
+          command: sudo corepack enable && corepack prepare pnpm@7.13.2 --activate
           # command: |
           #   curl -fsSL https://get.pnpm.io/install.sh | SHELL=`which bash` bash -
           #   curl -L https://pnpm.js.org/pnpm.js | node - add --global pnpm@7.13.2
