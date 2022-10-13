@@ -1,0 +1,55 @@
+version: 2.1
+
+executors:
+  default:
+    working_directory: ~/workspace
+    docker:
+      - image: cimg/node:16.17.0
+        environment:
+          TZ: 'Asia/Tokyo'
+
+commands:
+  # node_modules をキャッシュから復元する。
+  restore_npm:
+    steps:
+      - restore_cache:
+          name: Restore node dependencies
+          key: learn-pnpm-node-{{ checksum "pnpm-lock.yaml" }}
+  # 依存ライブラリをインストールする。
+  pnpm_install:
+    steps:
+      - run:
+          name: Install pnpm package manager
+          command: sudo corepack enable && corepack prepare pnpm@7.13.2 --activate
+      - run:
+          name: Execute pnpm install
+          command: pnpm i
+  # node_modules のキャッシュを作成する。
+  save_npm:
+    steps:
+      - save_cache:
+          name: Cache node dependencies
+          key: learn-pnpm-node-{{ checksum "pnpm-lock.yaml" }}
+          paths:
+            - ~/workspace/node_modules
+  # ユニットテストを実行する。
+  unit_test:
+    steps:
+      - run:
+          name: Run Jest
+          command: pnpm core test
+
+jobs:
+  test:
+    executor: default
+    steps:
+      - checkout
+      - restore_npm
+      - pnpm_install
+      - save_npm
+      - unit_test
+
+workflows:
+  check:
+    jobs:
+      - test
