@@ -12,11 +12,14 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+
       - name: Set node version
         run: echo "NODE_VERSION=$(cat .node-version)" >> $GITHUB_ENV
       - uses: actions/setup-node@v3
         with:
           node-version: ${{ env.NODE_VERSION }}
+
+      # package.json に記載されている pnpm のバージョンを参照する。
       - name: Set pnpm version
         shell: bash
         run: |
@@ -25,6 +28,7 @@ jobs:
       - uses: pnpm/action-setup@v2.2.2
         with:
           version: ${{ env.PNPM_VERSION }}
+
       - name: Cache node modules
         uses: actions/cache@v3
         env:
@@ -36,6 +40,7 @@ jobs:
             ${{ runner.os }}-build-${{ env.cache-name }}-
             ${{ runner.os }}-build-
             ${{ runner.os }}-
+
       - name: Install Dependencies
         run: pnpm i
 
