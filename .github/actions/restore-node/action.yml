@@ -18,6 +18,7 @@ runs:
         pnpm=$(cat package.json | jq -r .engines.pnpm)
         echo "PNPM_VERSION=${pnpm}" >> $GITHUB_ENV
     - name: Echo
+      shell: bash
       run: echo "PNPM_VERSION is \"$PNPM_VERSION\"."
 
     - uses: pnpm/action-setup@v2.2.2

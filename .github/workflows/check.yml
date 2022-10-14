@@ -17,6 +17,17 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: ${{ env.NODE_VERSION }}
+
+    - name: Set pnpm version
+      shell: bash
+      run: |
+        pnpm=$(cat package.json | jq -r .engines.pnpm)
+        echo "PNPM_VERSION=${pnpm}" >> $GITHUB_ENV
+        
+    - name: Echo
+      shell: bash
+      run: echo "PNPM_VERSION is \"$PNPM_VERSION\"."
+
       - uses: pnpm/action-setup@v2.2.2
         with:
           version: 7.13.2
