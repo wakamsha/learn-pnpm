@@ -24,7 +24,7 @@ runs:
 
     - uses: pnpm/action-setup@v2.2.2
       with:
-        version: 7.13.2
+        version: ${{ env.PNPM_VERSION }}
 
     - name: Restore node_modules
       uses: actions/cache@v3
