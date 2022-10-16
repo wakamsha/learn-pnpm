@@ -1,0 +1,44 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:base"],
+  "timezone": "Asia/Tokyo",
+  "labels": ["dependencies"],
+  "commitMessagePrefix": ":pill: ",
+  "separateMultipleMajor": true,
+  "separateMinorPatch": true,
+  "packageRules": [
+    {
+      "groupName": "nodeJs",
+      "extends": ["group:nodeJs"],
+      "matchDatasources": ["docker"],
+      "matchPackageNames": ["cimg/node"],
+      "versioning": "node"
+    },
+
+    {
+      "groupName": "App",
+      "matchPackagePatterns": ["react", "mobx", "constate", "emotion", "csx"],
+      "enabled": false
+    },
+    {
+      "groupName": "Lint",
+      "matchPackagePatterns": ["eslint", "prettier", "cspell", "jest"],
+      "enabled": false
+    },
+    {
+      "groupName": "rest",
+      "matchPackagePatterns": [
+        "cheerio",
+        "glob",
+        "husky",
+        "lint-staged",
+        "npm-run-all",
+        "svgo",
+        "ts-xor",
+        "vite",
+        "yargs"
+      ],
+      "enabled": false
+    }
+  ]
+}
