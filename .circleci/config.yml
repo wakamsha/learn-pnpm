@@ -24,7 +24,7 @@ commands:
           command: |
             ver=$(cat package.json | jq -r .engines.pnpm)
             com="corepack enable && corepack prepare pnpm@$ver --activate"
-            eval $com
+            echo "$com"
       - run:
           name: Execute pnpm install
           command: pnpm i
