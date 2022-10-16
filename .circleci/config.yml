@@ -20,7 +20,11 @@ commands:
     steps:
       - run:
           name: Install pnpm package manager
-          command: sudo corepack enable && corepack prepare pnpm@7.13.2 --activate
+          # command: sudo corepack enable && corepack prepare pnpm@7.13.2 --activate
+          command: |
+            pnpm=$(cat package.json | jq -r .engines.pnpm)
+            'export PNPM_VERSION=${pnpm}' >> "$BASH_ENV"
+            sudo corepack enable && corepack prepare pnpm@${PNPM_VERSION} --activate
       - run:
           name: Execute pnpm install
           command: pnpm i
